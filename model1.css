@@ -1,0 +1,83 @@
+/* Common CSS styles for all model detail sections */
+.model-details {
+    padding: 50px;
+    text-align: center;
+}
+
+.model-details h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.model-details p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.model-details ul {
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.model-details ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.model-details .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.model-details .image-container img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid #e28080;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.model-details .image-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Specific CSS styles for the brief */
+.model-details .brief {
+    margin-top: 50px;
+    background-color: #cac8e4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.model-details .brief h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #020000; /* Change color to a blue shade */
+    text-transform: uppercase; /* Convert text to uppercase */
+    text-align: center; /* Center-align the heading */
+}
+
+.model-details .brief ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.model-details .brief ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 20px; /* Add left padding to align with bullet points */
+    position: relative; /* Add relative positioning for custom bullet points */
+}
+
+.model-details .brief ul li:before {
+    content: '\2022'; /* Unicode character for bullet point */
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: #03203f; /* Match color with heading */
+    font-size: 16px;
+}

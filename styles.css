@@ -1,0 +1,95 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Car gallery section styles */
+.car-gallery {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.car-gallery h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 200px; /* Set maximum width */
+    max-height: 150px; /* Set maximum height */
+    width: auto; /* Ensure aspect ratio is maintained */
+    height: auto; /* Ensure aspect ratio is maintained */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}

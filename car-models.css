@@ -1,0 +1,54 @@
+/* car-models.css */
+/* Styles specific to the main car models page */
+
+/* Ensure navigation links are horizontally aligned */
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+/* Highlight active link (Car Models) */
+header nav ul li.active {
+    background-color: #007bff;
+}
+
+/* Style for model cards */
+.main-models {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.model-card {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+.model-card:hover {
+    transform: scale(1.05);
+}
+
+.model-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.model-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.model-card h3 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.model-card p {
+    margin-top: 10px;
+    font-size: 16px;
+}

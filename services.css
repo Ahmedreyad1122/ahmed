@@ -1,0 +1,78 @@
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li.active a {
+    color: #007bff; /* Change active link color */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Services section styles */
+.services {
+    padding: 50px;
+}
+
+.services h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service {
+    margin-bottom: 30px;
+}
+
+.service-frame {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-frame:hover {
+    transform: translateY(-5px);
+}
+
+.service-frame h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.service-frame p {
+    font-size: 16px;
+}

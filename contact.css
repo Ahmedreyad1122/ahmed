@@ -1,0 +1,117 @@
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li.active a {
+    color: #007bff; /* Change active link color */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    margin-bottom: 30px;
+    color: #333; /* Change heading color */
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555; /* Change paragraph text color */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    margin-right: 30px;
+    background-color: #fff; /* Change background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.contact-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff; /* Change heading color */
+}
+
+.contact-item p {
+    font-size: 16px;
+    color: #333; /* Change paragraph text color */
+}
+
+.social-media h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333; /* Change heading color */
+}
+
+.social-media ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul li {
+    margin: 0 10px;
+}
+
+.social-media ul li a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media ul li a img:hover {
+    transform: scale(1.1);
+}

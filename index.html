@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Car Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BMW Showroom</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="car-models.html">Car Models</a></li>
+                <li><a href="registration.html">Registration</a></li> <!-- Link to Registration page -->
+                <li><a href="login.html">Login</a></li> <!-- Link to Login page -->
+            
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to BMW Showroom</h1>
+        <p>Explore our latest models and book your test drive today.</p>
+        <!-- Image display with last extension -->
+        <img src="" alt="Latest BMW Car Image" id="carImage">
+    </section>
+
+    <!-- Other sections of the Home Page -->
+
+    <footer>
+        <p>&copy; 2024 BMW Showroom. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript code to retrieve the image with the latest extension
+        window.onload = function() {
+            // Array of possible image extensions
+            const extensions = ['jpg', 'jpeg', 'png', 'gif'];
+
+            // Loop through each extension and check if the image exists
+            for (let i = 0; i < extensions.length; i++) {
+                const imgPath = `bmwCar.${extensions[i]}`;
+                const img = new Image();
+                img.onload = function() {
+                    document.getElementById('carImage').src = imgPath;
+                };
+                img.onerror = function() {
+                    // If image doesn't exist, try the next extension
+                    if (i === extensions.length - 1) {
+                        console.error('Image not found!');
+                    }
+                };
+                img.src = imgPath;
+            }
+        };
+    </script>
+</body>
+</html>
